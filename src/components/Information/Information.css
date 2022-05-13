@@ -1,0 +1,88 @@
+.imgCol{
+    width: 16%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.infoCol{
+    width: 68%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.infoCol H1{
+    margin-bottom: 10px;
+}
+
+.mealImg {
+    width: 100%;
+}
+
+.linkApi{
+    color: #d46e17;
+    transition: 0.6s;
+}
+
+.linkApi:hover{
+    color: #fdc339;
+}
+
+.infoBtn{
+    color: #2C2E2F;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #fdc339;
+    margin: 3px 0 5px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.infoBtn:hover{
+    background-color:  #d46e17;
+}
+
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.boxSearch{
+    display: flex;
+    justify-content: center;
+}
+
+.boxSearch form{
+    display: flex;
+}
+
+.boxSearch input{
+    width: 250px;
+    padding: 8px 5px;
+    border: none;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 8px ;
+    border-top-left-radius: 8px ;
+    color: #000000;
+}
+
+.boxSearch button{
+    padding: 8px 5px;
+    border: solid 1px #f9f9f9;
+    margin-bottom: 15px;
+    border-bottom-right-radius: 8px ;
+    border-top-right-radius: 8px ;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.boxTotals{
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
