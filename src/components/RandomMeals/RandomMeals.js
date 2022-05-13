@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import Information from "../Information";
-import LatestMeals from "../LatestMeals";
 import {Link} from "react-router-dom";
 
 const HomePage = () => {
