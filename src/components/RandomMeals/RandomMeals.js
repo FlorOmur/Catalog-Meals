@@ -25,17 +25,18 @@ const HomePage = () => {
     <div>
       <h2 className="titleComponents" >Random Meals</h2>
       <div className="row">
-        {
-          random.meals.map((meal) => (
-            <div key={meal.idMeal} className="mealCol">
-              <Link to={`/randomMeals/${meal.idMeal}`}>
-                <img src={`${meal.strMealThumb}/preview`} className="mealImg" alt="img" />
-                <h3 className="titleMeals">{meal.strMeal}</h3>
-              </Link>
-            </div>
-          ))
-        }
-
+        <div className="itemLatesMeat">
+          {
+            random.meals.map((meal) => (
+              <div key={meal.idMeal} className="mealCol">
+                <Link to={`/randomMeals/${meal.idMeal}`}>
+                  <img src={`${meal.strMealThumb}/preview`} className="mealImg" alt="img" />
+                  <h3 className="titleMeals">{meal.strMeal}</h3>
+                </Link>
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   );

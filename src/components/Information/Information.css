@@ -1,15 +1,3 @@
-.imgCol{
-    width: 16%;
-    padding: 0 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.infoCol{
-    width: 68%;
-    padding: 0 15px;
-    text-align: center;
-}
 
 .infoCol H1{
     margin-bottom: 10px;
@@ -80,9 +68,3 @@
     cursor: pointer;
 }
 
-.boxTotals{
-    display: flex;
-    justify-content: center;
-    padding: 0 15px;
-    margin-bottom: 20px;
-}

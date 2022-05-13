@@ -23,16 +23,20 @@ const LatestMeals = () => {
     <div>
       <h2 className="titleComponents">Latest Meals</h2>
       <div className="row">
-        {
-          latestMeals.meals.map((oneMeal) => (
-            <div key={oneMeal.idMeal} className="mealCol">
-              <Link to={`/latestMeals/${oneMeal.idMeal}`}>
-                <img className="item-img" src={`${oneMeal.strMealThumb}/preview`} alt="img"/>
-                <h3 className="titleMeals">{oneMeal.strMeal}</h3>
-              </Link>
-            </div>
-          ))
-        }
+        <div className="itemLatesMeat">
+          {
+            latestMeals.meals.map((oneMeal) => (
+              <div key={oneMeal.idMeal} className="mealCol">
+                <Link to={`/latestMeals/${oneMeal.idMeal}`}>
+                  <img className="mealImg" src={`${oneMeal.strMealThumb}/preview`} alt="img"/>
+                  <h3 className="titleMeals">{oneMeal.strMeal}</h3>
+                </Link>
+              </div>
+            ))
+          }
+        </div>
+
+
       </div>
 
     </div>
