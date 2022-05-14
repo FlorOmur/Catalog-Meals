@@ -54,7 +54,6 @@ const Information = () => {
         </div>
         <div className="line"></div>
       </div>
-
     </div>
   );
 };

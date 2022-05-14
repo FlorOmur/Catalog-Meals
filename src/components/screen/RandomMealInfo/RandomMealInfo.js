@@ -36,7 +36,7 @@ const RandomMealInfo = () => {
           <div className="itemMeal">
             <h2 className="titleMeals">{latestMeals.strMeal}</h2>
             <img className="item-img" src={`${latestMeals.strMealThumb}/preview`} alt="img" />
-            <Link to={`/latestMeals/${+id+ 1}`}><button className="btnComponent" >Go Next</button></Link>
+            <Link to={`/latestMeals/${+id +1}`}><button className="btnComponent" >Go Next</button></Link>
           </div>
         </div>
         <div className="col-8">

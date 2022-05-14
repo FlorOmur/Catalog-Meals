@@ -1,10 +1,9 @@
-import React from 'react';
-import {useEffect, useState} from "react";
+import React,{useEffect, useState} from 'react';
 import {Link, useParams} from "react-router-dom";
 import axios from "axios";
 
 const MealInfo = () => {
-  const [latestMeals,setLatestMeals] = useState({})
+  const [latestMeals, setLatestMeals] = useState({})
   const [isLoading,setIsLoading] = useState(true)
   const [ingredients,setIngredients] = useState([])
   const getIngredients = () => {
@@ -15,7 +14,9 @@ const MealInfo = () => {
     }
     setIngredients(result)
   }
+
   const {id} = useParams()
+
   useEffect(()  => {
     axios(`https://www.themealdb.com/api/json/v2/1/lookup.php?i=${id}`)
       .then((res) => {
@@ -35,7 +36,7 @@ const MealInfo = () => {
           <div className="itemMeal">
             <h2 className="titleMeals">{latestMeals.strMeal}</h2>
             <img className="item-img" src={`${latestMeals.strMealThumb}/preview`} alt="img" />
-            <Link to={`/latestMeals/${+id+ 1}`}><button className="btnComponent" >Go Next</button></Link>
+            <Link to={`/latestMeals/${+id +1}`}><button className="btnComponent" >Go Next</button></Link>
           </div>
         </div>
         <div className="col-8">

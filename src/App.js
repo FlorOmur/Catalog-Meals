@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import MealInfo from "./components/screen/MealInfo";
 import RandomMealInfo from "./components/screen/RandomMealInfo";
 import Ingredients from "./components/Ingredients";
+import Browse from "./components/screen/Browse";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<HomePage />}/>
           <Route path="/latestMeals/:id" element={<MealInfo />}/>
           <Route path="/randomMeals/:id" element={<RandomMealInfo />}/>
+          <Route path="/browse/:name" element={<Browse />}/>
           <Route path="/ingredients/:product" element={<Ingredients />}/>
         </Routes>
     </div>
