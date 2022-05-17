@@ -5,6 +5,7 @@ import MealInfo from "./components/screen/MealInfo";
 import RandomMealInfo from "./components/screen/RandomMealInfo";
 import Ingredients from "./components/Ingredients";
 import Browse from "./components/screen/Browse";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/ingredients/:product" element={<Ingredients />}/>
         </Routes>
     </div>
+      <Footer />
     </BrowserRouter>
   );
 }

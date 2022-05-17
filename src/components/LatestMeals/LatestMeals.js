@@ -35,10 +35,7 @@ const LatestMeals = () => {
             ))
           }
         </div>
-
-
       </div>
-
     </div>
   );
 };

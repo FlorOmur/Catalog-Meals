@@ -1,0 +1,27 @@
+.footer{
+    padding: 30px 0;
+    background-color: #23180d;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_box_info a{
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+.footer_box_info a:hover{
+    color: #c42d2f;
+}
+
+.footer_box_info-count{
+    display: flex;
+}
+
+.img-footer{
+    margin-left: 10px;
+}
+

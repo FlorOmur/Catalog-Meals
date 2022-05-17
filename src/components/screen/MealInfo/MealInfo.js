@@ -6,6 +6,7 @@ const MealInfo = () => {
   const [latestMeals, setLatestMeals] = useState({})
   const [isLoading,setIsLoading] = useState(true)
   const [ingredients,setIngredients] = useState([])
+
   const getIngredients = () => {
     let result = []
     for(let i = 0; i< 20; i++) {

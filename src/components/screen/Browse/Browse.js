@@ -17,7 +17,6 @@ const Browse = () => {
   return (
     <div>
       <Link to="/"><button className="btnBrowse" >Back</button> </Link>
-
         <div className="itemLatesMeat">
           {
             browse.map((meal) => (
@@ -28,7 +27,6 @@ const Browse = () => {
             ))
           }
         </div>
-
       <h3 className="titleMeals">Browse Meals</h3>
     </div>
   );

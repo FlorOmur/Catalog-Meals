@@ -10,6 +10,7 @@ const Header = () => {
   const [search, setSearch] = useState("")
   const navigate = useNavigate()
   const handleChange = (e) => setSearch(e.target.value)
+
   const handleSearch = (e) => {
     if (e.key === "Enter") {
       navigate(`/browse/${search}`)
@@ -46,8 +47,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-
     </header>
   );
 };
